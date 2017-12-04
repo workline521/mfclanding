@@ -1,0 +1,548 @@
+.section5
+    display block
+    width 100%
+    padding-top 57px
+    padding-bottom 69px
+    @media (max-width: 959px)
+        padding-top 50px
+    @media (max-width: 760px)
+        padding-top 35px
+        padding-bottom 40px
+    &__title
+        display block
+        text-align center
+        font-size 38px
+        font-weight 700
+        line-height 38px
+        padding-bottom 28px
+        @media (max-width: 959px)
+            font-size 28px
+            line-height 32px
+        @media (max-width: 760px)
+            font-size 22px
+            text-align center
+            line-height 26px
+            padding-bottom 15px
+    &__info
+        display block
+        font-size 18px
+        text-align center
+        padding-bottom 35px
+        @media (max-width: 959px)
+            font-size 16px
+            padding-bottom 10px
+        @media (max-width: 760px)
+            padding-bottom 90px
+    &__navslider
+        display block
+        width 100%
+        @media (max-width: 1215px)
+            width 750px
+            margin-left auto
+            margin-right auto
+        @media (max-width: 959px)
+            width 579px
+            margin-left auto
+            margin-right auto
+        @media (max-width: 760px)
+            width 296px
+    &__navslide
+        display block
+        cursor pointer
+        width 390px !important
+        height 226px !important
+        border 1px solid #c9c9c9
+        padding-left 45px
+        padding-right 45px
+        opacity 1 !important
+        left 0px !important
+        transition all .2s ease-out
+        @media (max-width: 1215px)
+            width 250px !important
+            padding-left 30px
+            padding-right 0
+            height 152px !important
+        @media (max-width: 959px)
+            width 193px !important
+        @media (max-width: 760px)
+            width 52px !important
+
+    &__text-wrap
+        display -webkit-flex
+        display -moz-flex
+        display -ms-flex
+        display -o-flex
+        display flex
+        flex-direction column
+        justify-content center
+        width 100%
+        height 100%
+        @media (max-width: 760px)
+            opacity 0
+        span
+            display block
+            font-size 22px
+            font-weight 700
+            line-height 30px
+            padding-bottom 11px
+            @media (max-width: 959px)
+                font-size 18px
+                line-height 22px
+        p
+            display block
+            @media (max-width: 1215px)
+                display none
+    &__mainslider
+        display block
+        width 100%
+        @media (max-width: 1215px)
+            width 750px
+            margin-left auto
+            margin-right auto
+        @media (max-width: 959px)
+            width 579px
+            margin-left auto
+            margin-right auto
+        @media (max-width: 760px)
+            width 296px
+        .slick-prev
+            position absolute
+            top 43%
+            left -80px
+            border 1px solid #e5e5e5
+            width 50px
+            height 50px
+            font-size 0
+            background url('../img/general/a-red.svg') no-repeat center
+            @media (max-width: 1010px)
+                left -65px
+            @media (max-width: 959px)
+                left -60px
+            @media (max-width: 760px)
+                left 0
+                top -225px
+        .slick-next
+            position absolute
+            top 43%
+            right -80px
+            border 1px solid #e5e5e5
+            width 50px
+            height 50px
+            font-size 0
+            background url('../img/general/a-red.svg') no-repeat center
+            transform rotate(180deg)
+            @media (max-width: 1010px)
+                right -65px
+            @media (max-width: 959px)
+                right -60px
+            @media (max-width: 760px)
+                right 0
+                top -225px
+        ul
+            position absolute
+            display -webkit-flex
+            display -moz-flex
+            display -ms-flex
+            display -o-flex
+            display flex
+            bottom 20px
+            left 50%
+            transform translateX(-50%)
+        li
+            margin-right 15px
+        .slick-dots button
+            font-size 0
+            background rgba(255, 255, 255, 0.5)
+            border-radius 50%
+            width 16px
+            height 16px
+            padding 0
+            border 0
+        .slick-dots li.slick-active button
+            background #ffffff
+    &__mainslide
+        width 100%
+        height 520px !important
+        padding-left 401px
+        padding-right 39px
+        @media (max-width: 1215px)
+            padding-left 30px
+            padding-right 30px
+            height 690px !important
+        @media (max-width: 760px)
+            height auto !important
+            padding-left 20px
+            padding-right 20px
+            padding-bottom 60px
+    &__flex-wrapper
+        display -webkit-flex
+        display -moz-flex
+        display -ms-flex
+        display -o-flex
+        display flex
+        height 100%
+        align-items center
+        @media (max-width: 1215px)
+            align-items flex-start
+    &__mainslide-wrap
+        width 100%
+        display -webkit-flex
+        display -moz-flex
+        display -ms-flex
+        display -o-flex
+        display flex
+        flex-wrap wrap
+        justify-content space-between
+        align-items flex-start
+    &__text-wrap2
+        display block
+        width 100%
+        span
+            display block
+            font-size 22px
+            padding-bottom 15px
+            @media (max-width: 1215px)
+                padding-top 25px
+            @media (max-width: 959px)
+                font-size 18px
+            @media (max-width: 760px)
+                padding-top 15px
+                padding-bottom 13px
+                font-size 16px
+        p
+            display block
+            font-size 22px
+            font-weight 700
+            padding-bottom 25px
+            @media (max-width: 959px)
+                font-size 18px
+            @media (max-width: 760px)
+                font-size 16px
+    &__content-wrap
+        display block
+        width 370px
+        @media (max-width: 1215px)
+            width 100%
+    &__time-wrap
+        display -webkit-flex
+        display -moz-flex
+        display -ms-flex
+        display -o-flex
+        display flex
+        flex-wrap wrap
+        align-items center
+    &__date
+        display block
+        position relative
+        font-size 14px
+        font-weight 700
+        line-height 14px
+        padding-left 24px
+        padding-right 24px
+        @media (max-width: 760px)
+            padding-right 40px
+        &:before
+            position absolute
+            content ''
+            top -4px
+            right 0
+            width 1px
+            height 22px
+            background #e5e5e5
+        &:after
+            position absolute
+            content ''
+            top -1px
+            left 0
+            width 15px
+            height 14px
+            background url('../img/general/calendar.svg') no-repeat
+    &__time
+        display block
+        position relative
+        font-size 14px
+        font-weight 700
+        line-height 14px
+        padding-left 40px
+        padding-right 23px
+
+
+        &:before
+            position absolute
+            content ''
+            top -4px
+            right 0
+            width 1px
+            height 22px
+            background #e5e5e5
+            @media (max-width: 760px)
+                display none
+        &:after
+            position absolute
+            content ''
+            top 1px
+            left 21px
+            width 13px
+            height 13px
+            background url('../img/general/clock.svg') no-repeat
+    &__ratio
+        display -webkit-flex
+        display -moz-flex
+        display -ms-flex
+        display -o-flex
+        display flex
+        color #7f7f7f
+        margin-left 18px
+        line-height 14px
+        @media (max-width: 760px)
+            margin-left 0
+            padding-top 15px
+    &__scale
+        display block
+        width 7px
+        height 14px
+        margin-right 2px
+        background #85e15a
+        &:nth-child(1)
+            margin-left 8px
+        &:nth-child(2)
+            background #9ec44e
+        &:nth-child(3)
+            background #ee8539
+        &:nth-child(4)
+            background #e43827
+        &:nth-child(5)
+            background #e1001a
+    &__text-wrap3
+        display block
+        padding-top 19px
+        padding-bottom 36px
+        @media (max-width: 1215px)
+            padding-bottom 27px
+        @media (max-width: 760px)
+            padding-bottom 15px
+        p
+            display block
+    &__content-wrap2
+        display block
+        width 330px
+        background rgba(255, 255, 255, 0.5)
+        border-radius 3px
+        padding-top 24px
+        padding-left 30px
+        padding-right 30px
+        padding-bottom 15px
+        @media (max-width: 1215px)
+            width 100%
+            margin-bottom 28px
+        @media (max-width: 760px)
+            padding 0
+            background transparent
+            margin-bottom 15px
+        span
+            display block
+            font-size 18px
+            padding-bottom 17px
+            @media (max-width: 1215px)
+                padding-bottom 7px
+    &__text-wrap4
+        display block
+        @media (max-width: 1215px)
+            display -webkit-flex
+            display -moz-flex
+            display -ms-flex
+            display -o-flex
+            display flex
+            flex-wrap wrap
+            justify-content space-between
+        p
+            display block
+            position relative
+            padding-bottom 10px
+            padding-left 22px
+            @media (max-width: 1215px)
+                width 48%
+            @media (max-width: 760px)
+                width 100%
+            &:after
+                position absolute
+                content ''
+                top 7px
+                left 0
+                width 13px
+                height 10px
+                background url('../img/general/Check.svg') no-repeat center
+    &__btn
+        display block
+        @media (max-width: 1215px)
+            display none !important
+    &__btn2
+        display none !important
+        @media (max-width: 1215px)
+            display block !important
+            margin-left auto
+            margin-right auto
+            width 280px
+.navslide1
+    background-color #ebebeb
+    padding-left 36px
+    padding-right 95px
+    @media (max-width: 1215px)
+        padding-left 30px
+        padding-right 10px
+    @media (max-width: 760px)
+        padding-left 15px
+        padding-right 10px
+    &:after
+        position absolute
+        content ''
+        width 123px
+        height 125px
+        top 43px
+        right 52px
+        background url('../img/general/tab1.svg') no-repeat center
+        @media (max-width: 1215px)
+            top 13px
+            right 18px
+        @media (max-width: 760px)
+            display none
+.navslide2
+    position relative
+    background-color #ebebeb
+    padding-left 45px
+    padding-right 60px
+    @media (max-width: 1215px)
+        padding-left 30px
+        padding-right 10px
+    @media (max-width: 760px)
+        padding-left 15px
+        padding-right 10px
+    &:after
+        position absolute
+        content ''
+        width 82px
+        height 125px
+        top 43px
+        right 35px
+        background url('../img/general/tab2.svg') no-repeat center
+        @media (max-width: 1215px)
+            top 13px
+            right 19px
+        @media (max-width: 760px)
+            display none
+.navslide3
+    background #ebebeb
+    padding-left 56px
+    padding-right 65px
+    @media (max-width: 1215px)
+        padding-left 30px
+        padding-right 15px
+    @media (max-width: 760px)
+        padding-left 15px
+        padding-right 10px
+    &:after
+        position absolute
+        content ''
+        width 123px
+        height 125px
+        top 48px
+        right 18px
+        background url('../img/general/tab3.svg') no-repeat center
+        @media (max-width: 1215px)
+            top 13px
+            right 12px
+        @media (max-width: 760px)
+            display none
+.navslide1.slick-current
+    background-color #f5f5f5
+    border 1px solid transparent
+    @media (max-width: 760px)
+        width 192px !important
+    .section5__text-wrap
+        @media (max-width: 760px)
+            opacity 1
+    &:after
+        position absolute
+        @media (max-width: 760px)
+            display block
+.navslide2.slick-current
+    border 1px solid #3e4555
+    background-color #3e4555
+    @media (max-width: 760px)
+        width 192px !important
+    .section5__text-wrap
+        @media (max-width: 760px)
+            opacity 1
+    &:after
+        position absolute
+        content ''
+        width 82px
+        height 125px
+        top 43px
+        right 35px
+        background url('../img/general/tab2_white.svg') no-repeat center
+        @media (max-width: 1215px)
+            top 13px
+            right 19px
+        @media (max-width: 760px)
+            display block
+    .section5__text-wrap span
+        color #ffffff
+    .section5__text-wrap p
+        color #ffffff
+.navslide3.slick-current
+    border 1px solid transparent
+    background-color #d6f0f6
+    @media (max-width: 760px)
+        width 192px !important
+    .section5__text-wrap
+        @media (max-width: 760px)
+            opacity 1
+    &:after
+        position absolute
+        @media (max-width: 760px)
+            display block
+.mainslide1
+    background #ebebeb url('../img/general/bg1_desktop.jpg') no-repeat center
+    background-size cover
+    @media (max-width: 1215px)
+        background #ebebeb url('../img/general/bg1_960.jpg') no-repeat center
+        background-size cover
+.mainslide2
+    background #424757 url('../img/general/bg2_desktop.jpg') no-repeat center
+    background-size cover
+    @media (max-width: 1215px)
+        background #424757 url('../img/general/bg2_960.jpg') no-repeat center
+        background-size cover
+    .section5__text-wrap2 span
+        color #ffffff
+    .section5__text-wrap2 p
+        color #ffffff
+    .section5__date
+        color #ffffff
+    .section5__time
+        color #ffffff
+    .section5__ratio
+        color #ffffff
+    .section5__text-wrap3 p
+        color #ffffff
+    .section5__content-wrap2
+        background rgba(255, 255, 255, 0.8)
+        @media (max-width: 760px)
+            background transparent
+    .section5__content-wrap2 span
+        @media (max-width: 760px)
+            color #ffffff
+    .section5__text-wrap4 p
+        @media (max-width: 760px)
+            color #ffffff
+    .section5__date:after
+        background url('../img/general/calendar_wh.svg') no-repeat center
+    .section5__time:after
+        background url('../img/general/clock_white.svg') no-repeat center
+.mainslide3
+    background #d8f0f5 url('../img/general/bg3_desktop.jpg') no-repeat center
+    background-size cover
+    @media (max-width: 1215px)
+        background #d8f0f5 url('../img/general/bg3_960.jpg') no-repeat center
+        background-size cover

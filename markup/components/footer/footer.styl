@@ -1,0 +1,245 @@
+.footer
+    display block
+    width 100%
+    min-height 193px
+    background #f9f9f9
+    padding-top 34px
+    @media (max-width: 959px)
+        padding-bottom 40px
+    .section9__phone
+        padding-bottom 0
+        @media (max-width: 760px)
+            padding-bottom 10px
+    &__logo
+        display block
+        text-align left
+        width 23%
+        height 49px
+        position relative
+        @media (max-width: 959px)
+            width 27%
+        @media (max-width: 760px)
+            width 100%
+            margin-bottom 20px
+        &:after
+            position absolute
+            content ''
+            top 50%
+            transform translateY(-50%)
+            right 0
+            width 1px
+            height 21px
+            background-color #cccccc
+            @media (max-width: 850px)
+                display none
+    &__logo-pic
+        display -webkit-flex
+        display -moz-flex
+        display -ms-flex
+        display -o-flex
+        display flex
+        width 200px
+        height 49px
+        img
+            width 100%
+            max-width 100%
+            object-fit cover
+    &__wrap
+        display -webkit-flex
+        display -moz-flex
+        display -ms-flex
+        display -o-flex
+        display flex
+        flex-wrap wrap
+        justify-content space-between
+        width 100%
+        height 49px
+        align-items center
+        @media (max-width: 959px)
+            height auto
+    &__adress-wrap
+        display flex
+        justify-content center
+        width 33%
+        position relative
+        @media (max-width: 959px)
+            width 46%
+        @media (max-width: 760px)
+            width 100%
+            justify-content flex-start
+            padding-bottom 15px
+        &:after
+            position absolute
+            content ''
+            top 50%
+            transform translateY(-50%)
+            right 0
+            width 1px
+            height 21px
+            background-color #cccccc
+            @media (max-width: 850px)
+                display none
+    &__adress-wrap2
+        display block
+        width 260px
+    &__adress
+        display block
+        @media (max-width: 760px)
+            padding-bottom 10px
+    &__link
+        display block
+        cursor pointer
+        color #808080
+        text-decoration underline
+    &__phone-wrap
+        display flex
+        justify-content center
+        width 23.5%
+        position relative
+        @media (max-width: 959px)
+            width 27%
+        @media (max-width: 760px)
+            width 100%
+            justify-content flex-start
+        &:after
+            position absolute
+            content ''
+            top 50%
+            transform translateY(-50%)
+            right 0
+            width 1px
+            height 21px
+            background-color #cccccc
+            @media (max-width: 959px)
+                display none
+    &__phone-wrap2
+        display block
+        width 150px
+
+    &__email
+        display block
+        text-decoration underline
+        color #808080
+        position relative
+        padding-left 24px
+        &:after
+            position absolute
+            content ''
+            top 9px
+            left 0
+            width 11px
+            height 9px
+            background url('../img/general/email.svg') no-repeat center
+    &__social-wrap
+        display -webkit-flex
+        display -moz-flex
+        display -ms-flex
+        display -o-flex
+        display flex
+        flex-wrap wrap
+        width 20.5%
+        height 45px
+        justify-content flex-end
+        @media (max-width: 959px)
+            width 170px
+            margin-top 27px
+        @media (max-width: 760px)
+            margin-top 20px
+    &__social-wrap2
+        display flex
+        flex-wrap wrap
+        width 170px
+        height 45px
+        justify-content space-between
+    &__yt
+        display block
+        position relative
+        width 45px
+        height 45px
+        background url('../img/general/yt.svg') no-repeat center
+        transition background 0.3s ease-out
+        &:after
+            position absolute
+            content ''
+            top 0
+            left 0
+            width 100%
+            height 100%
+            background url('../img/general/yt2.svg') no-repeat center
+            opacity 0
+            z-index -10
+        &:hover
+            background url('../img/general/yt2.svg') no-repeat center
+    &__fb
+        display block
+        position relative
+        width 45px
+        height 45px
+        background url('../img/general/Fb.svg') no-repeat center
+        transition background 0.3s ease-out
+        &:after
+            position absolute
+            content ''
+            top 0
+            left 0
+            width 100%
+            height 100%
+            background url('../img/general/fb2.svg') no-repeat center
+            opacity 0
+            z-index -10
+        &:hover
+            background url('../img/general/fb2.svg') no-repeat center
+    &__inst
+        display block
+        position relative
+        width 45px
+        height 45px
+        background url('../img/general/inst.svg') no-repeat center
+        transition background 0.3s ease-out
+        &:after
+            position absolute
+            content ''
+            top 0
+            left 0
+            width 100%
+            height 100%
+            background url('../img/general/inst2.svg') no-repeat center
+            opacity 0
+            z-index -10
+        &:hover
+            background url('../img/general/inst2.svg') no-repeat center
+    &__wrap2
+        display block
+        width 500px
+        padding-top 37px
+        padding-left 103px
+        color #808080
+        font-size 12px
+        line-height 18px
+        position relative
+        @media (max-width: 959px)
+            padding-top 30px
+        @media (max-width: 760px)
+            width 100%
+            padding-top 80px
+            padding-left 0
+        &:after
+            position absolute
+            content ''
+            top 37px
+            left 0
+            width 87px
+            height 37px
+            background url('../img/general/footer.png') no-repeat center
+            @media (max-width: 760px)
+                top 22px
+        &:before
+            position absolute
+            content ''
+            top 0
+            left 0
+            width 1px
+            height 1px
+            background #3e4555 url(../img/general/tab2_white.svg) no-repeat 270px 41px
+            opacity 0
+            z-index -1

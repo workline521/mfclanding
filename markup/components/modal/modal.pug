@@ -1,0 +1,13 @@
+mixin modal(data)
+    .modal
+        .modal__title Заказать звонок
+        .modal__text Укажите ваши актуальные данные, и мы свяжемся с вами в течение 15 минут
+        form.modal__form(action="#", method="post")
+            input.modal__input(type="text", name="name", required, placeholder="ВАШЕ ИМЯ")
+            input.modal__input.maskedphone(type="text", name="phone", required, placeholder="ВАШ НОМЕР ТЕЛЕФОНА")
+            input.modal__input.modal__input3(type="email", name="email", required, placeholder="ВАШ EMAIL")
+            .modal__checkbox-wrap
+                input#agree.modal__checkbox(type="checkbox", required, checked)
+                label.modal__label(for="agree") Согласен на обработку персональных данных
+            button.modal__submit(type="submit") Записаться
+        .modal__close

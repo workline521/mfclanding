@@ -1,0 +1,183 @@
+.section7
+    display block
+    width 100%
+    min-height 500px
+    padding-top 55px
+    padding-bottom 68px
+    @media (max-width: 760px)
+        padding-top 35px
+        padding-bottom 40px
+    &__title
+        display block
+        text-align center
+        font-size 38px
+        line-height 38px
+        font-weight 700
+        padding-bottom 34px
+        @media (max-width: 959px)
+            font-size 28px
+            line-height 28px
+        @media (max-width: 760px)
+            font-size 22px
+            line-height 24px
+            padding-bottom 90px
+    &__slider
+        display block
+        width 970px
+        margin-left auto
+        margin-right auto
+        box-shadow 0 0 20px rgba(0, 0, 0, 0.1)
+        border-radius 3px
+        @media (max-width: 1215px)
+            width 745px
+        @media (max-width: 959px)
+            width 580px
+        @media (max-width: 760px)
+            width 296px
+        .slick-prev
+            position absolute
+            top 43%
+            left -80px
+            border 1px solid #e5e5e5
+            width 50px
+            height 50px
+            font-size 0
+            background url('../img/general/a-red.svg') no-repeat center
+            @media (max-width: 959px)
+                left -60px
+            @media (max-width: 760px)
+                left 0
+                top -70px
+        .slick-next
+            position absolute
+            top 43%
+            right -80px
+            border 1px solid #e5e5e5
+            width 50px
+            height 50px
+            font-size 0
+            background url('../img/general/a-red.svg') no-repeat center
+            transform rotate(180deg)
+            @media (max-width: 959px)
+                right -60px
+            @media (max-width: 760px)
+                right 0
+                top -70px
+    &__slide
+        display block
+        width 100%
+        height 300px
+        padding 40px 58px 37px 40px
+        @media (max-width: 959px)
+            padding 30px 30px 27px 30px
+        @media (max-width: 760px)
+            height auto
+            padding 20px
+    &__content-wrap
+        display -webkit-flex
+        display -moz-flex
+        display -ms-flex
+        display -o-flex
+        display flex
+        flex-wrap wrap
+        justify-content space-between
+        @media (max-width: 760px)
+            flex-direction column
+            justify-content flex-start
+    &__pic
+        display block
+        text-align center
+        width 90px
+        max-height 90px
+        overflow hidden
+        border-radius 50%
+        img
+            width 100%
+            max-width 100%
+            object-fit cover
+    &__text-wrap
+        display block
+        width calc(100% - 110px)
+        @media (max-width: 760px)
+            width 100%
+    &__heading
+        font-size 24px
+        line-height 24px
+        font-weight 700
+        @media (max-width: 760px)
+            font-size 16px
+            line-height 23px
+            padding-top 10px
+    &__text-wrap2
+        display -webkit-flex
+        display -moz-flex
+        display -ms-flex
+        display -o-flex
+        display flex
+        flex-wrap wrap
+        padding-top 19px
+        @media (max-width: 760px)
+            padding-top 10px
+    &__user-name
+        display block
+        line-height 15px
+        padding-right 33px
+        position relative
+        @media (max-width: 959px)
+            width 50%
+            padding-right 0
+        @media (max-width: 760px)
+            width 100%
+            padding-bottom 14px
+        &:after
+            position absolute
+            content ''
+            top -4px
+            right 0
+            width 1px
+            height 22px
+            background #e5e5e5
+            @media (max-width: 760px)
+                display none
+    &__user-time
+        color #7f7f7f
+        line-height 15px
+        padding-left 31px
+        padding-right 33px
+        position relative
+        @media (max-width: 959px)
+            width 50%
+            padding-right 0
+            padding-left 0
+            text-align center
+        @media (max-width: 760px)
+            width 100%
+            text-align left
+        &:after
+            position absolute
+            content ''
+            top -4px
+            right 0
+            width 1px
+            height 22px
+            background #e5e5e5
+            @media (max-width: 760px)
+                display none
+        span
+            color #00000a
+            line-height 15px
+            padding-left 3px
+    &__course
+        display block
+        font-weight 700
+        padding-top 14px
+    &__text-wrap3
+        display block
+        padding-top 18px
+    &__ratio
+        @media (max-width: 959px)
+            width 50%
+            margin-left 0 !important
+            margin-top 15px
+        @media (max-width: 760px)
+            margin-top 0

@@ -1,0 +1,374 @@
+@import 'slick.css'
+.btn
+    display block
+    cursor pointer
+    text-align center
+    border-radius 3px
+    background $hover
+    color #ffffff
+    font-size 14px
+    font-weight 700
+    line-height 14px
+    text-transform uppercase
+    padding-top 18px
+    padding-bottom 18px
+    transition all .3s ease-out
+    &:hover
+        background darken($hover, 20%)
+.top-slider
+    display block
+    width 100%
+    height 680px
+    max-width 1920px
+    margin 0 auto
+    @media (max-width: 959px)
+        height 520px
+    @media (max-width: 760px)
+        height 440px
+    ul
+        display -webkit-flex
+        display -moz-flex
+        display -ms-flex
+        display -o-flex
+        display flex
+        position absolute
+        bottom 30px
+        left 50%
+        transform translateX(-50%)
+        @media (max-width: 959px)
+            bottom 20px
+
+        li
+            margin-right 15px
+            &:last-child
+                margin-right 0
+    button
+        font-size 0
+        background #efedeb
+        border none
+        border-radius 50%
+        width 16px
+        height 16px
+        padding 0
+
+    &__slide
+        display block
+        width 100%
+        height 100%
+        background-size cover
+        background-position center
+        background-repeat no-repeat
+        @media (max-width: 760px)
+            background-image none !important
+            background-color #e8e8e7
+    &__centerize
+        display -webkit-flex
+        display -moz-flex
+        display -ms-flex
+        display -o-flex
+        display flex
+        flex-wrap wrap
+        width 100%
+        height 680px
+        @media (max-width: 959px)
+            height 520px
+        @media (max-width: 760px)
+            height 440px
+    &__text-wrap
+        display block
+        width 100%
+        position relative
+        z-index 2
+        p
+            display block
+            color #8d8d8d
+            font-family 'Roboto', sans-serif
+            font-size 18px
+            line-height 28px
+            font-weight 400
+            @media (max-width: 959px)
+                font-size 16px
+                line-height 24px
+    &__time-wrap
+        display flex
+        flex-wrap wrap
+        position absolute
+        right 0
+        bottom 17px
+        @media (max-width: 760px)
+            width 100%
+            right 0
+            bottom -30px
+        span
+            display block
+            position relative
+            font-weight 700
+            color #000
+            font-size 16px
+            line-height 16px
+            padding-left 44px
+            @media (max-width: 959px)
+                display block
+            @media (max-width: 760px)
+                font-size 14px
+                line-height 14px
+                padding-left 20px
+                color #000000
+            &:first-child
+                margin-right 29px
+            &:before
+                position absolute
+                content ''
+                width 36px
+                height 35px
+                top -10px
+                left 0
+                @media (max-width: 959px)
+                    width 30px
+                    height 30px
+                @media (max-width: 760px)
+                    width 14px
+                    height 14px
+                    top 0
+            &:first-child:before
+                background url('../img/general/calendarblack.png') no-repeat center
+                background-size cover
+                @media (max-width: 760px)
+                    background url('../img/general/calendarblack.png') no-repeat center
+                    background-size cover
+            &:last-child:before
+                background url('../img/general/clockblack.png') no-repeat center
+                background-size cover
+                @media (max-width: 760px)
+                    background url('../img/general/clockblack.png') no-repeat center
+                    background-size cover
+
+    &__inner-text
+        display block
+        position relative
+        width 570px
+        @media (max-width: 760px)
+            width 100%
+        p
+            display block
+            position relative
+            font-family: 'PF DinDisplay Pro', sans-serif
+            color #000000
+            letter-spacing: -0.8px;
+            font-size 18px
+            line-height 18px
+            font-weight 400
+            padding-left 70px
+            padding-bottom 35px
+            @media (max-width: 959px)
+                font-size 18px
+                line-height 18px
+                padding-bottom 25px
+                padding-left 70px
+            @media (max-width: 760px)
+                padding-left 30px
+                font-size 16px
+                line-height 16px
+                padding-bottom 15px
+                letter-spacing 0
+            &:after
+                position absolute
+                content ''
+                width 26px
+                height 27px
+                top -7px
+                left 30px
+                background url('../img/general/tickbig.png') no-repeat center
+                background-size cover
+                @media (max-width: 959px)
+                    top 0
+                    width 18px
+                    height 18px
+                @media (max-width: 760px)
+                    left 0
+                    width 16px
+                    height 16px
+                    top -2px
+
+    &__inner-text3
+        width 900px
+        @media (max-width: 760px)
+            width 100%
+        p
+            padding-left 120px
+            padding-bottom 19px
+            @media (max-width: 760px)
+                padding-left 30px
+                line-height 22px
+                font-size 16px
+                padding-bottom 15px
+    &__course-programm
+        display block
+        color #000000
+        letter-spacing: -0.3px;
+        font-size 26px
+        line-height 26px
+        font-weight 400
+        padding-bottom 45px
+        padding-left 30px
+        @media (max-width: 959px)
+            font-size 16px
+            line-height 16px
+        @media (max-width: 760px)
+            padding-left 0
+            padding-bottom 25px
+    &__title
+        display block
+        color #00000a
+        font-family "Roboto", sans-serif
+        font-size 70px
+        font-weight 900
+        line-height 70px
+        padding-bottom 20px
+        @media (max-width: 959px)
+            font-size 50px
+            line-height 60px
+            padding-bottom 5px
+        @media (max-width: 760px)
+            font-size 22px
+            line-height 24px
+    &__title1
+        display block
+        letter-spacing -1px
+        color #ac2421
+        font-size 63px
+        line-height 63px
+        font-weight 700
+        padding-left 30px
+        padding-top 100px
+        @media (max-width: 959px)
+            font-size 60px
+            line-height 60px
+            padding-top 30px
+        @media (max-width: 760px)
+            padding-left 0
+            font-size 22px
+            line-height 22px
+    &__title2
+        display block
+        letter-spacing -1px
+        color #000000
+        font-size 43px
+        line-height 43px
+        font-weight 700
+        padding-left 30px
+        padding-top 149px
+        @media (max-width: 959px)
+            padding-top 76px
+        @media (max-width: 760px)
+            padding-left 0
+            font-size 22px
+            line-height 22px
+            padding-top 53px
+    &__title3
+        display block
+        text-transform uppercase
+        color #000000
+        font-size 46px
+        font-weight 700
+        line-height 46px
+        padding-left 30px
+        padding-top 150px
+        @media (max-width: 959px)
+            padding-top 77px
+            font-size 29px
+            line-height 29px
+        @media (max-width: 760px)
+            padding-top 35px
+            font-size 18px
+            line-height 22px
+            padding-left 0
+            text-transform none
+    &__heading1
+        display block
+        letter-spacing: -0.3px;
+        color #000000
+        font-size 36px
+        line-height 36px
+        font-weight 700
+        padding-bottom 45px
+        padding-left 30px
+        padding-top 6px
+        @media (max-width: 959px)
+            font-size 22px
+            line-height 22px
+        @media (max-width: 760px)
+            padding-left 0
+            padding-bottom 25px
+    &__heading2
+        display block
+        text-transform uppercase
+        font-family 'PF DinDisplay Pro', sans-serif
+        color #000000
+        font-size 52px
+        line-height 52px
+        font-weight 700
+        padding-bottom 53px
+        padding-left 30px
+        padding-top 6px
+        @media (max-width: 959px)
+            padding-bottom 28px
+        @media (max-width: 760px)
+            padding-left 0
+            font-size 22px
+            line-height 22px
+            padding-bottom 45px
+    &__heading3
+        display block
+        text-transform uppercase
+        color #ac2421
+        font-size 46px
+        font-weight 700
+        line-height 46px
+        padding-left 30px
+        padding-top 5px
+        padding-bottom 56px
+        @media (max-width: 959px)
+            font-size 38px
+            line-height 38px
+        @media (max-width: 760px)
+            padding-left 0
+            font-size 21px
+            line-height 21px
+            padding-bottom 30px
+    &__heading
+        display block
+        color #00000a
+        font-family 'Roboto', sans-serif
+        font-size 26px
+        font-weight 400
+        line-height 28px
+        padding-bottom 30px
+        @media (max-width: 959px)
+            font-size 20px
+            line-height 24px
+            padding-bottom 20px
+        @media (max-width: 760px)
+            font-size 16px
+            line-height 24px
+            padding-bottom 13px
+    &__btn
+        width 295px
+        line-height 14px
+        font-weight 400
+        font-size 14px
+        margin-top 18px
+        border-radius 2px
+        background-color #ac2421
+        @media (max-width: 959px)
+            margin-top 23px
+        @media (max-width: 760px)
+            font-size 16px
+            line-height 16px
+            padding-top 14px
+            padding-bottom 14px
+            margin-top 8px
+
+
+.top-slider ul li.slick-active button
+    background #fff

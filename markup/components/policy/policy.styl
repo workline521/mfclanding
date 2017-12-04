@@ -1,0 +1,66 @@
+.policy
+    display none
+    position fixed
+    background #fff
+    padding 30px
+    width 90%
+    height 90%
+    top 50%
+    left 50%
+    transform translateX(-50%) translateY(-50%)
+    z-index 101
+    overflow-y scroll
+    @media (max-width: 800px)
+       padding 20px
+       padding-left 10px
+    ol
+        @media (max-width: 800px)
+            padding-left 30px
+        li
+            @media (max-width: 800px)
+                font-size 14px
+    &__wrap
+        display block
+        width 100%
+        height auto
+    &__block
+        display block
+
+    &__title
+        display block
+        text-align center
+        color $hover
+        font-size 33px
+        font-weight 700
+        line-height 33px
+        padding-bottom 10px
+        padding-top 10px
+        @media (max-width: 800px)
+            font-size 19px
+            line-height 19px
+            padding-bottom 0
+    &__close
+        display block
+        cursor pointer
+        position absolute
+        top 20px
+        right 20px
+        width 20px
+        height 20px
+        background url('../img/general/cross2.svg') no-repeat center
+.sqare li
+    padding-left 30px
+    position relative
+    @media (max-width: 800px)
+        padding-left 20px
+    &:after
+        position absolute
+        content ''
+        top 10px
+        left 10px
+        width 4px
+        height 4px
+        border-radius 50%
+        background #00000a
+        @media (max-width: 800px)
+            left 5px

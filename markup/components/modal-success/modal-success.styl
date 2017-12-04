@@ -1,0 +1,37 @@
+.modal-success
+    display none
+    position fixed
+    padding 30px
+    top 50%
+    left 50%
+    transform translateX(-50%) translateY(-50%)
+    width 370px
+    height 485px
+    border-radius 3px
+    background-color #3e648f
+    z-index 102
+    @media (max-width: 500px)
+        width 296px
+        height 480px
+        padding 25px
+    &__title
+        font-size 22px
+        line-height 24px
+        text-align center
+        color #ffffff
+        padding-top 216px
+    &__text
+        display block
+        color #ffffff
+    &__close
+        display block
+        cursor pointer
+        position absolute
+        top -20px
+        right -20px
+        width 20px
+        height 20px
+        background url('../img/general/cross.svg') no-repeat center
+        @media (max-width: 500px)
+            top 10px
+            right 10px

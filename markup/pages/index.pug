@@ -1,0 +1,78 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head.pug
+    include ../components/header/header.pug
+    include ../components/main/main.pug
+    include ../components/footer/footer.pug
+    include ../components/modal/modal.pug
+    include ../components/policy/policy.pug
+    include ../components/modal-success/modal-success.pug
+    head
+        +head(head.defaults)
+    body.page
+        |%=symbols=%
+        +header
+        +main
+        +footer
+        .modal__overlay
+        +modal
+        +policy
+        +modal-success
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')
+        script(type='text/javascript').
+            ymaps.ready(init);
+            if ($(window).width() < 760){
+                var cord1 = [55.7462612866517,37.53921697486872]
+
+                }
+            else if ($(window).width() < 959 && $(window).width() > 760){
+                  var cord1 = [55.747120620565134,37.54164169181818]
+
+            }
+            else{
+                var cord1 = [55.74711456898431,37.539077499999934]
+            }
+            var myMap,
+            myPlacemark;
+            function init(){
+            myMap = new ymaps.Map("map", {
+            center: cord1,
+            zoom: 17
+            });
+            myPlacemark = new ymaps.Placemark([55.74711456898431,37.539077499999934], {}, {
+            preset: 'islands#redIcon'
+            });
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+            if ($(window).width() < 760){
+                myMap.controls.remove('zoomControl');
+                }
+
+            myMap.controls.remove('searchControl');
+            myMap.controls.remove('trafficControl');
+            myMap.controls.remove('typeSelector');
+            myMap.controls.remove('fullscreenControl');
+            myMap.controls.remove('rulerControl');
+            myMap.controls.remove('geolocationControl');
+            }
+        script.
+            $(document).ready(function() {
+            $("form").submit(function() {
+            $.ajax({
+            type: "POST",
+            url: "http://test.yodiz.ru/mfclanding/request2.php",
+            data: $(this).serialize()
+            }).done(function() {
+            $(this).find("input").val("");
+            $("form").trigger("reset");
+            $(".modal__overlay").fadeIn(500);
+            $(".modal-success").fadeIn(500);
+            });
+            return false;
+            });
+            });

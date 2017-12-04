@@ -1,0 +1,10 @@
+mixin section8(data)
+    .section8
+        .container
+            .section8__title Запишитесь на наши курсы бесплатно
+            .section8__info Осталось 5 бесплатных мест
+            form.section8__form(action="#", method="post")
+                input.section8__input(type="text", name="name", required, placeholder="ВАШЕ ИМЯ")
+                input.section8__input.maskedphone(type="text", name="phone", required, placeholder="ВАШ НОМЕР ТЕЛЕФОНА")
+                input.section8__input(type="email", name="email", required, placeholder="ВАШ EMAIL")
+                button.section8__submit(type="submit") Записаться
